@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Driver</string>
+    <string name="rigest">注册</string>
+    <string name="phonenumber">手机号</string>
+    <string name="writephonenumb">请输入手机号</string>
+    <string name="writephonecode">请输入短信验证码</string>
+    <string name="phonecode">短信验证码</string>
+    <string name="sendcode">发送短信验证码</string>
+    <string name="password">密码</string>
+    <string name="writepassword">请输入密码</string>
+    <string name="rigestandlogin">注册并登陆</string>
+    <string name="tologin">去登陆</string>
+    <string name="torigest">去注册</string>
+    <string name="login">登陆</string>
+    <string name="forgetpassword">忘记密码</string>
+    <string name="phonefastlogin">手机快速登录</string>
+
+</resources>

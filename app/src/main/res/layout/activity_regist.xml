@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beij"
+    tools:context="com.bibinet.driver.activity.MainActivity">
+<ImageView
+    android:id="@+id/userphoto"
+    android:layout_width="93dp"
+    android:layout_height="93dp"
+    android:layout_marginTop="32dp"
+    android:background="@mipmap/ic_launcher_round"
+    android:layout_centerHorizontal="true"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_below="@id/userphoto"
+    android:text="@string/rigest"
+    android:textSize="20sp"
+    android:textColor="#FFFFFF"
+    android:layout_centerHorizontal="true"/>
+<LinearLayout
+    android:id="@+id/rigestrange"
+    android:layout_width="match_parent"
+    android:layout_height="166dp"
+    android:layout_marginTop="188dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/range_circle"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:textColor="#323232"
+        android:textSize="16sp"
+        android:text="@string/phonenumber"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:background="@null"
+        android:hint="@string/writephonenumb"
+        android:textSize="13sp" />
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:textColor="#323232"
+        android:textSize="16sp"
+        android:text="@string/phonecode"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/writephonecode"
+        android:background="@null"
+        android:textSize="13sp"
+        android:layout_gravity="center"
+        android:layout_weight="3"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="35dp"
+        android:background="@drawable/range_button"
+        android:layout_marginRight="10dp"
+        android:text="@string/sendcode"
+        android:layout_gravity="center"/>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:textColor="#323232"
+        android:textSize="16sp"
+        android:text="@string/password"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/writepassword"
+        android:background="@null"
+        android:textSize="13sp"
+        android:layout_gravity="center"
+        android:layout_weight="3"/>
+</LinearLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/regist"
+        style="@style/ButtonStyle"
+        android:layout_below="@id/rigestrange"
+        android:background="#D3483A"
+        android:layout_marginTop="30dp"
+        android:text="@string/rigestandlogin"
+       />
+<TextView
+    android:id="@+id/tologin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textColor="#FFFFFF"
+    android:layout_below="@id/regist"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:drawableRight="@drawable/zhuce"
+    android:drawablePadding="10dp"
+    android:text="@string/tologin"/>
+
+    <LinearLayout
+        android:id="@+id/userprotocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tologin"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意《"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户使用协议"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="》"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+</RelativeLayout>
