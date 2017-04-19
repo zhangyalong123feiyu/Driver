@@ -15,10 +15,16 @@ public class LoginActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initView();
+        initData();
+    }
+    private void initView() {
+
+    }
+    private void initData() {
+
     }
 
-    private void initView() {
-    }
+
 
 
 }

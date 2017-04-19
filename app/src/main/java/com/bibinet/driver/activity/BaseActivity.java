@@ -12,12 +12,13 @@ import android.support.v7.app.AppCompatActivity;
 import com.bibinet.driver.R;
 import com.bibinet.driver.constant.Constants;
 import com.jaeger.library.StatusBarUtil;
+import com.zhy.autolayout.AutoLayoutActivity;
 
 /**
  * Created by bibinet on 2017-4-18.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AutoLayoutActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
